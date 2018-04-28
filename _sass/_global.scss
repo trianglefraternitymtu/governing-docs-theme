@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+
+p,
+a,
+li {
+  @include body-font;
+}
+
+body {
+  counter-reset: article;
+
+  h1 {
+    counter-reset: section;
+    &:before {
+      counter-increment: article;
+      content: "Article " counter(article, upper-roman) ": ";
+    }
+  }
+
+  h2 {
+    &:before {
+      counter-increment: section;
+      content: "Section " counter(section) ": ";
+    }
+  }
+
+  ol {
+    counter-reset: sub-section;
+    list-style-type: none;
+
+    li {
+      &:before {
+        counter-increment: sub-section;
+        content: counter(section) "." counters(sub-section, ".") ". ";
+      }
+    }
+  }
+
+  ul {
+    li {
+      &:before {
+        content: none;
+      }
+    }
+  }
+}

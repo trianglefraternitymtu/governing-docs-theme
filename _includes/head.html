@@ -1,0 +1,38 @@
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+  <!-- facebook open graph tags -->
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="{{ page.url | absolute_url }}"/>
+  <meta property="og:site_name" content="{{ site.title }}"/>
+
+  <!-- twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@{{ site.twitter_username }}" />
+  <meta name="twitter:domain" content="{{ site.url }}"/>
+  <meta name="twitter:url" content="{{ page.url | absolute_url }}"/>
+
+  <title>{{ site.title }}</title>
+  <meta property="og:title" content="{{ site.title }}"/>
+  <meta name="twitter:title" content="{{ site.title }}"/>
+
+  <!-- Description metadata is something else... -->
+  <meta property="og:description" content="{{ site.description | strip_html | normalize_whitespace | escape }}"/>
+  <meta name="twitter:description" content="{{ site.description | strip_html | normalize_whitespace | escape }}"/>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Site specific CSS -->
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" type='text/css'>
+
+  <!-- Some fonts that might or might not be used -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+  <!-- <style class="anchorjs"></style> -->
+</head>
