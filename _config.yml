@@ -1,0 +1,36 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Governing Documents Template
+description: > # this means to ignore newlines until "timezone:"
+  Template for all governing documents of Triangle Fraternity at Michigan Technological University
+timezone: America/Detroit
+
+# Build settings
+markdown: kramdown
+
+collections:
+  appendicies:
+    output: true
+    permalink: /appendicies/:title
+
+defaults:
+  - scope:
+      type: "appendicies"
+    values:
+      layout: "appendix"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - README.md
+  - .travis.yml
+  - .gitignore
+  - LICENSE
