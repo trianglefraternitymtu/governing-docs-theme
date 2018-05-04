@@ -9,8 +9,8 @@
         <img src="{{ 'assets/imgs/arctic_delta_t.png' | relative_url }}" alt="Arctic Delta-T Logo"/>
         <h2 class="doc-subtitle">{{ site.title }}</h2>
         {%- if page.ratified-on -%}
-        <h3 class="doc-info">Ratified on {{ page.last_modified_at | date: '%-m/%-d/%y' }}</h3>
-        <h3 class="doc-info">Last updated on {{ page.ratified-on | date: '%-m/%-d/%y' }}</h3>
+        <h3 class="doc-info">Ratified on {{ page.ratified-on | date: '%-m/%-d/%y' }}</h3>
+        <h3 class="doc-info">Last updated on {{ page.last_modified_at | date: '%-m/%-d/%y' }}</h3>
         {%- endif -%}
       </div>
       {{ content }}
