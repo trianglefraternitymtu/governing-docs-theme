@@ -20,6 +20,7 @@ body {
     counter-reset: section;
     &:before {
       counter-increment: article;
+      font-weight: bold;
       content: "Article " counter(article, upper-roman) ": ";
     }
   }
@@ -27,6 +28,7 @@ body {
   h2 {
     &:before {
       counter-increment: section;
+      font-weight: bold;
       content: "Section " counter(section) ": ";
     }
   }
@@ -38,6 +40,7 @@ body {
     li {
       &:before {
         counter-increment: sub-section;
+        font-weight: bold;
         content: counter(section) "." counters(sub-section, ".") ". ";
       }
     }
