@@ -16,6 +16,30 @@ li {
 body {
   counter-reset: article;
 
+  h1.doc-title {
+    &:before {
+      counter-increment: none;
+      font-weight: normal;
+      content: none;
+    }
+  }
+
+  h2.doc-subtitle {
+    &:before {
+      counter-increment: none;
+      font-weight: normal;
+      content: none;
+    }
+  }
+
+  h3.doc-info {
+    &:before {
+      counter-increment: none;
+      font-weight: normal;
+      content: none;
+    }
+  }
+
   h1 {
     counter-reset: section;
     &:before {

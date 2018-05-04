@@ -4,6 +4,15 @@
 
   <body id="page-top">
     <main role="main" class="container">
+      <div class="doc-header text-center">
+        <h1 class="doc-title">{{ site.organization }}</h1>
+        <img src="{{ 'assets/imgs/arctic_delta_t.png' | relative_url }}"/>
+        <h2 class="doc-subtitle">{{ site.title }}</h2>
+        {%- if page.ratified-on -%}
+        <h3 class="doc-info">Ratified on {{ page.last_modified_at | date: '%-m/%-d/%y' }}</h3>
+        <h3 class="doc-info">Last updated on {{ page.ratified-on | date: '%-m/%-d/%y' }}</h3>
+        {%- endif -%}
+      </div>
       {{ content }}
     </main>
     {% include footer.html %}
