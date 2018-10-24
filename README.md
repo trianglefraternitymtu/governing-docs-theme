@@ -6,9 +6,8 @@ Jekyll theme for governing documents of Triangle Fraternity at Michigan Technolo
 ## Instructions
 
 1. Follow the [setup instructions](https://github.com/benbalter/jekyll-remote-theme#usage) for using a remote theme.
-2. (Optional) Add `jekyll-last-modified-at` gem to your `Gemfile`.
-3. Set `remote_theme: trianglefraternitymtu/governing-docs-theme` in `_config.yml`.
-4. Set `organization: Triangle Fraternity` in `_config.yml`.
+1. Set `remote_theme: trianglefraternitymtu/governing-docs-theme` in `_config.yml`.
+1. Set `organization: Triangle Fraternity` in `_config.yml`.
 
 ## Notes
 
